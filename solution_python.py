@@ -7,11 +7,11 @@ class EventSourcer():
         self.redoStack = []
 
     def add(self, num: int):
-        self.value+=int
+        self.value+=num
         self.undoStack.append(self.value)
 
     def subtract(self, num: int):
-        self.value-=int
+        self.value-=num
         self.undoStack.append(self.value)
 
     def undo(self):
